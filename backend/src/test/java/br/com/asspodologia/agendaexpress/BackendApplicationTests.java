@@ -1,4 +1,4 @@
-package br.com.asspodologia.backend;
+package br.com.asspodologia.agendaexpress;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
