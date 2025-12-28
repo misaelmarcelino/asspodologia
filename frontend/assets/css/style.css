@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  color: #2C3E50;
+}
+
+.btn {
+  width: 80%;
+  background-color: #F1C40F;
+  border-radius: 50px;
+  border: 1px solid #2C3E50;
+  position: relative;
+  z-index: 100;
+}
+.btn .cta-link {
+  display: flex;
+  text-decoration: none;
+  color: #2C3E50;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.btn:hover {
+  width: 83%;
+  opacity: 0.9;
+  background-color: #F1C40F;
+}
+
+.btn-cta-primary {
+  padding: 1.5rem;
+  display: flex;
+  margin-left: 60px;
+}
+.btn-cta-primary:hover {
+  padding: 1.9rem;
+}
+
+.hero {
+  height: 95vh;
+  background: url("/asspodologia/frontend/assets/img/bg.png") no-repeat top center;
+  background-size: 100%;
+}
+.hero .hero-text {
+  padding: 130px 0 0 100px;
+}
+.hero .hero-text .hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.hero .hero-text .hero-subtitle {
+  font-size: 2.2rem;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+.hero .hero-text .hero-p {
+  font-size: 1.6rem;
+}
+.hero .img-perfil {
+  padding-top: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.identification {
+  margin-top: -220px;
+  margin-bottom: 100px;
+  padding-top: 220px;
+  padding-bottom: 200px;
+  background: url("/asspodologia/frontend/assets/img/bg/bg-w.png") no-repeat top center;
+  background-position: top center;
+  position: relative;
+  z-index: 100;
+}
+.identification .identification-title {
+  margin: 0 auto;
+  text-align: center;
+  color: #F39C12;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.identification p {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+.identification .identification-col-list {
+  margin-top: 50px;
+  padding: 0;
+}
+.identification .identification-col-list .identification-list {
+  color: #099310;
+  font-size: 1.6rem;
+  line-height: 4rem;
+  list-style: none;
+  text-decoration: none;
+}
+.identification .identification-footer strong {
+  font-weight: 700;
+}
+
+.pain {
+  background-color: #D7B398;
+  background-size: auto;
+  height: 900px;
+  margin-top: -300px;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: #2C3E50;
+  color: #ECF0F1;
+  display: flex;
+  align-items: center;
+}
+.footer .footer-col {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */

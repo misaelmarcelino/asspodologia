@@ -1,0 +1,34 @@
+@use "../variables" as v;
+
+.btn {
+    width: 80%;
+    background-color: v.$secondary-color;
+    border-radius: 50px;
+    border: 1px solid v.$primary-color; 
+    position: relative;
+    z-index: 100;
+    .cta-link {
+        display: flex;
+        text-decoration: none;
+        color: v.$primary-color;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    &:hover {
+        width: 83%;
+        opacity: 0.9;
+        background-color: v.$secondary-color;
+    }
+
+}
+.btn-cta-primary {
+    padding: 1.5rem;
+    display: flex;
+    margin-left: 60px;
+    
+    &:hover {
+        padding: 1.9rem;
+    }
+    
+}
