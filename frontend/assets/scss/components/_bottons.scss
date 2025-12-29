@@ -1,34 +1,80 @@
 @use "../variables" as v;
 
 .btn {
-    width: 80%;
+    width: 100%;
     background-color: v.$secondary-color;
     border-radius: 50px;
     border: 1px solid v.$primary-color; 
     position: relative;
-    z-index: 100;
+    z-index: 200;
+    cursor: pointer;
+}
+.btn-cta-primary {
+    padding: 1.5rem 1.1rem ;
+    margin: 15px 0 15px 60px;
+    width: 530px;
+    display: flex;
+
     .cta-link {
+        width: 100%;
         display: flex;
+        align-items: center;
+        justify-content: space-around;
         text-decoration: none;
         color: v.$primary-color;
         font-size: 1.2rem;
-        font-weight: 500;
-    }
+        font-weight: 600;
 
+        .btn-cta-text {
+            width: 440px;
+        }
+    }
     &:hover {
-        width: 83%;
+        width: 550px;
         opacity: 0.9;
         background-color: v.$secondary-color;
     }
-
+        
 }
-.btn-cta-primary {
-    padding: 1.5rem;
+
+.btn-cta-secondary {
+    width: 450px;
+    margin: 15px auto;
+    padding: 1rem;
     display: flex;
-    margin-left: 60px;
     
-    &:hover {
-        padding: 1.9rem;
+    .cta-link {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        text-decoration: none;
+        color: v.$primary-color;
+        font-size: 1.2rem;
+        font-weight: 700;
     }
-    
+    .btn-cta-icon {
+        width: 37px;
+    }
+
+    &:hover {
+        width: 480px;
+        opacity: 0.9;
+        background-color: v.$secondary-color;
+    }
+}
+
+.btn-faq {
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid v.$primary-color;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    background-color: v.$secondary-color;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: v.$primary-color;
 }

@@ -1,1 +1,25 @@
 @use "../variables" as v;
+
+.about {
+    background-color: v.$brown-color;
+    margin-top: -220px;
+    padding-top: 180px;
+    padding-bottom: 50px;
+
+    .about-header {
+        padding: 30px 0;
+        .about-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+    }
+    .about-content {
+        font-size: 1.3rem;
+        padding-left: 100px;
+
+        .about-text {
+            width: 80%;
+            text-align: justify;
+        }
+    }
+}   

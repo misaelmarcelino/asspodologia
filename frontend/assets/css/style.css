@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 html {
@@ -11,33 +12,78 @@ body {
 }
 
 .btn {
-  width: 80%;
+  width: 100%;
   background-color: #F1C40F;
   border-radius: 50px;
   border: 1px solid #2C3E50;
   position: relative;
-  z-index: 100;
+  z-index: 200;
+  cursor: pointer;
 }
-.btn .cta-link {
+
+.btn-cta-primary {
+  padding: 1.5rem 1.1rem;
+  margin: 15px 0 15px 60px;
+  width: 530px;
   display: flex;
+}
+.btn-cta-primary .cta-link {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   text-decoration: none;
   color: #2C3E50;
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 600;
 }
-.btn:hover {
-  width: 83%;
+.btn-cta-primary .cta-link .btn-cta-text {
+  width: 440px;
+}
+.btn-cta-primary:hover {
+  width: 550px;
   opacity: 0.9;
   background-color: #F1C40F;
 }
 
-.btn-cta-primary {
-  padding: 1.5rem;
+.btn-cta-secondary {
+  width: 450px;
+  margin: 15px auto;
+  padding: 1rem;
   display: flex;
-  margin-left: 60px;
 }
-.btn-cta-primary:hover {
-  padding: 1.9rem;
+.btn-cta-secondary .cta-link {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-decoration: none;
+  color: #2C3E50;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.btn-cta-secondary .btn-cta-icon {
+  width: 37px;
+}
+.btn-cta-secondary:hover {
+  width: 480px;
+  opacity: 0.9;
+  background-color: #F1C40F;
+}
+
+.btn-faq {
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  border: 1px solid #2C3E50;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  background-color: #F1C40F;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2C3E50;
 }
 
 .hero {
@@ -108,6 +154,272 @@ body {
   background-size: auto;
   height: 900px;
   margin-top: -300px;
+  padding-top: 250px;
+  padding-right: 0;
+}
+.pain .pain-header {
+  padding: 0;
+  margin: 0 0 0 40%;
+  width: 55%;
+}
+.pain .pain-header .pain-title {
+  font-weight: 700;
+  text-align: end;
+  line-height: 1.7rem;
+}
+.pain .pain-content {
+  width: 53.3% !important;
+}
+.pain .pain-context {
+  margin-top: 30px;
+  background-color: rgba(243, 156, 18, 0.14);
+  padding: 25px;
+  font-size: 1.2rem;
+}
+.pain .pain-context p {
+  padding: 7px 0;
+}
+.pain .pain-footer {
+  font-size: 1.7rem;
+  font-weight: 700;
+  padding-top: 40px;
+}
+
+.soluction {
+  background: url("/asspodologia/frontend/assets/img/bg/bg-w.png") no-repeat top center;
+  margin-top: -200px;
+  padding-top: 200px;
+  width: 100%;
+  height: 1100px;
+  position: relative;
+  z-index: 100;
+}
+.soluction .soluction-title {
+  margin-top: 50px;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.soluction .soluction-list {
+  font-size: 1.3rem;
+  padding: 30px 0;
+  margin-left: 170px;
+}
+.soluction .soluction-list .soluction-list-item {
+  padding: 7px;
+}
+.soluction .soluction-footer {
+  margin-top: -30px;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.soluction .cta {
+  text-align: center;
+  margin-top: 50px;
+}
+.soluction .cta .cta-title {
+  color: #F39C12;
+  font-size: 3.3rem;
+  font-weight: 900;
+}
+.soluction .cta .cta-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.soluction .cta .cta-text-aux {
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+.benefits {
+  background-color: #D7B398;
+  width: 100%;
+  margin-top: -130px;
+  padding-top: 160px;
+  height: 800px;
+}
+.benefits .benefits-header {
+  width: 50%;
+  padding-bottom: 50px;
+}
+.benefits .benefits-header .benefits-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+.benefits .benefits-cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 0;
+}
+.benefits .benefits-cards .card {
+  background-color: rgba(236, 240, 241, 0.7);
+  width: 19%;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 15px;
+  border: 2px solid #F1C40F;
+  padding: 20px 10px 0 10px;
+  text-align: center;
+}
+.benefits .benefits-cards .card .benefits-card-icon {
+  margin-bottom: 7px;
+}
+.benefits .benefits-cards .card .benefits-card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.benefits .benefits-footer {
+  font-size: 1.7rem;
+  font-weight: 700;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.testemonial {
+  position: relative;
+  background: url("/asspodologia/frontend/assets/img/bg/bg-w.png") no-repeat top center;
+  width: 100%;
+  height: 1200px;
+  margin-top: -190px;
+  padding: 190px;
+  overflow: hidden;
+  /* ==========================
+     Mosaico de avaliações (fundo)
+  ========================== */
+}
+.testemonial .testemonial-mosaic {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  padding: 220px 120px 120px;
+  /* efeito de fade nas bordas */
+  mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+}
+.testemonial .mosaic-track {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+  opacity: 0.35;
+  filter: blur(0.6px);
+}
+.testemonial .review-card {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  font-size: 14px;
+}
+.testemonial .review-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.testemonial .review-header .review-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #eee;
+}
+.testemonial .review-header .review-name {
+  font-weight: 600;
+  font-size: 14px;
+  color: #2C3E50;
+}
+.testemonial .review-header .review-stars {
+  font-size: 13px;
+  color: #fbbc04;
+  line-height: 1;
+}
+.testemonial {
+  /* ==========================
+     Conteúdo principal (frente)
+  ========================== */
+}
+.testemonial .testemonial-content {
+  position: relative;
+  z-index: 2;
+  background: url("/asspodologia/frontend/assets/img/bg/bg-testemonial30.png") top center no-repeat;
+  height: 100%;
+}
+.testemonial .testemonial-content .testemonial-header {
+  margin-top: 50px;
+  width: 50%;
+  margin-left: 50%;
+}
+.testemonial .testemonial-content .testemonial-header .testemonial-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.8), 0 0 6px rgba(255, 255, 255, 0.6), 0 4px 10px rgba(0, 0, 0, 0.35);
+}
+.testemonial .testemonial-content .testemonial-head-line {
+  padding: 20px 0;
+  font-size: 2.5rem;
+}
+.testemonial .testemonial-content .testemonial-head-line .quantity-consult {
+  color: #F39C12;
+  font-weight: 900;
+  font-size: 4rem;
+  text-shadow: 10px 5px 7px #2C3E50;
+}
+
+.about {
+  background-color: #D7B398;
+  margin-top: -220px;
+  padding-top: 180px;
+  padding-bottom: 50px;
+}
+.about .about-header {
+  padding: 30px 0;
+}
+.about .about-header .about-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.about .about-content {
+  font-size: 1.3rem;
+  padding-left: 100px;
+}
+.about .about-content .about-text {
+  width: 80%;
+  text-align: justify;
+}
+
+.faq {
+  background: url("/asspodologia/frontend/assets/img/bg/bg-w.png") no-repeat top center;
+  background-size: cover;
+  margin-top: -200px;
+  padding-top: 300px;
+  min-height: 1200px;
+  height: 100%;
+}
+.faq .faq-header {
+  padding: 30px 0;
+}
+.faq .faq-header .faq-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.faq .card-body {
+  font-size: 1.4rem;
+}
+
+.main-footer {
+  padding: 50px 0;
+}
+.main-footer .main-footer-title {
+  color: #F39C12;
+  font-size: 3.5rem;
+  font-weight: 900;
+}
+.main-footer .main-footer-text {
+  font-size: 1.7rem;
+  font-weight: 600;
 }
 
 .footer {

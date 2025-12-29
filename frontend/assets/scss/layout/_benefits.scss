@@ -1,1 +1,52 @@
 @use "../variables" as v;
+
+.benefits {
+    background-color: v.$brown-color;
+    width: 100%;
+    margin-top: -130px;
+    padding-top: 160px;
+    height: 800px;
+    .benefits-header {
+        width: 50%;
+        padding-bottom: 50px;
+        .benefits-title {
+            font-size: 2.3rem;
+            font-weight: 700;
+        }
+    }
+    .benefits-cards {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px 0;
+
+        .card {
+            background-color: rgba(v.$white-color, $alpha: .7);
+            width: 19%;
+            height: 280px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 15px;
+            border: 2px solid v.$secondary-color;
+            padding: 20px 10px 0 10px;
+            text-align: center;
+            
+            .benefits-card-icon {
+                margin-bottom: 7px;
+            }
+            .benefits-card-title {
+                font-size: 1.2rem;
+                font-weight: 600;
+            }
+        }
+    }
+    .benefits-footer {
+        font-size: 1.7rem;
+        font-weight: 700;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    
+}

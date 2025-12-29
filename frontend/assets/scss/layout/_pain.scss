@@ -3,4 +3,35 @@
     background-size: auto;
     height: 900px;
     margin-top: -300px;
+    padding-top: 250px;
+    padding-right: 0;
+    .pain-header {
+        padding: 0;
+        margin: 0 0 0 40%;
+        width: 55%;
+        .pain-title {
+            font-weight: 700;
+            text-align: end;
+            line-height: 1.7rem;
+        }
+    }
+    .pain-content {
+        width: 53.3% !important;
+    }
+    .pain-context {
+        margin-top: 30px;
+        background-color: rgba($color: #F39C12, $alpha: 14%);
+        padding: 25px;
+        font-size: 1.2rem;
+
+        p {
+            padding: 7px 0;
+        }
+    }
+    .pain-footer {
+        font-size: 1.7rem;
+        font-weight: 700;
+        padding-top: 40px;
+    }
+
 }
