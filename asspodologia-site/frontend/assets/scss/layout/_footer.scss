@@ -1,0 +1,15 @@
+@use "../variables.scss" as v;
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: v.$primary-color;
+    color: v.$white-color;
+    display: flex;
+    align-items: center;
+    .footer-col {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}

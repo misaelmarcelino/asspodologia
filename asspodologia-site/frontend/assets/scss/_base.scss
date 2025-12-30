@@ -1,0 +1,12 @@
+@use "variables" as v;
+
+
+html {
+    font-size: v.$font-size-base;
+}
+
+body {
+    font-family: v.$font-primary;
+    line-height: v.$line-height-base;
+    color:v.$primary-color;
+}

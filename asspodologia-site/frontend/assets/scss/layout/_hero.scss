@@ -1,0 +1,275 @@
+.hero {
+  height: 100vh;
+  background: 
+    url("../img/bg/bg-hero.png")
+    no-repeat
+    top center;
+    background-size: cover;  
+
+  .hero-text {
+    padding: 130px 0 0 100px;
+
+    .hero-title {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    .hero-subtitle {
+      font-size: 2.2rem;
+      font-weight: 600;
+      padding-bottom: 30px;
+    }
+
+    .hero-p {
+      font-size: 1.6rem;
+      max-width: 520px;
+    }
+  }
+
+  .img-perfil {
+    padding-top: 50px;
+    position: relative;
+    z-index: 1;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1441px) and (min-width: 1200px) {
+    .hero {
+        height: 900px;
+        background-size: cover;
+        background-position: top center;
+        .container {
+            padding: 0;
+            .hero-header {
+              padding: 10px 0;
+              .logo-header {
+                width: 170px;
+              }
+      
+            }
+        }
+     
+
+        .hero-text {
+          padding: 60px 0 0 80px;
+          .hero-title {
+            font-size: 2.8rem;
+          }
+          .hero-subtitle {
+            font-size: 1.8rem;
+          }
+          .hero-p {
+            font-size: 1.4rem;
+            max-width: 90%;
+          }
+        }
+        .img-perfil {
+          position: absolute;
+          top: 50px;
+          right: 0;
+          img {
+            width: 100%;
+          }
+        }
+        
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 1025px) {
+    .hero {
+        height: 900px;
+        background-size: cover;
+        background-position: top center;
+        .container {
+            padding: 0 15px;
+            .hero-header {
+              padding: 10px 0;
+              .logo-header {
+                width: 150px;
+              }
+      
+            }
+        }
+     
+
+        .hero-text {
+          padding: 40px 0 0 60px;
+          .hero-title {
+            font-size: 2.3rem;
+          }
+          .hero-subtitle {
+            font-size: 1.4rem;
+          }
+          .hero-p {
+            font-size: 1rem;
+            max-width: 90%;
+          }
+        }
+        .img-perfil {
+          position: absolute;
+          top: 40px;
+          right: 0;
+          img {
+            width: 100%;
+          }
+        }
+        
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    .hero {
+        height: 800px;
+        background-size: cover;
+        background-position: top center;
+        .container {
+            padding: 0 15px;
+            .hero-header {
+              padding: 10px 0;
+              .logo-header {
+                width: 170px;
+              }
+      
+            }
+        }
+     
+
+        .hero-text {
+          padding: 30px 0 0 40px;
+          .hero-title {
+            font-size: 2.2rem;
+          }
+          .hero-subtitle {
+            font-size: 1.5rem;
+          }
+          .hero-p {
+            font-size: 1rem;
+            max-width: 90%;
+          }
+        }
+        .img-perfil {
+          position: absolute;
+          top: 60px;
+          right: 0;
+          img {
+            width: 100%;
+          }
+        }
+        
+    }
+}
+
+@media (max-width: 768px) and (min-width: 426px) {
+    .hero {
+        height: 1100px;
+        background-size: cover;
+        background-position: top center;
+        .container {
+            min-width: 100%;
+            padding: 0 15px;
+            .hero-header {
+              padding: 10px 0;
+              .logo-header {
+                width: 150px;
+              }
+      
+            }
+        }
+     
+        .hero-content {
+          padding: 10px;
+        }
+        .hero-text {
+          margin: 300px auto 0 auto;
+          width: 100%;
+          padding: 20px 0 0 20px;
+          background-color: rgb(255, 255, 255, 0.3);
+          border-radius: 15px;
+          position: relative;
+          z-index: 2;
+          .hero-title {
+            font-size: 3.1rem;
+            text-shadow: 10px 5px 5px rgba(255, 255, 255, 0.3);
+            
+          }
+          .hero-subtitle {
+            font-size: 1.9rem;
+          }
+          .hero-p {
+            font-size: 1.3rem;
+            max-width: 90%;
+          }
+        }
+        .img-perfil {
+          position: absolute;
+          top: 50px;
+          left: 25%;
+          .perfil {
+            width: 60%;
+          }
+        }
+        
+    }
+}
+
+@media (max-width: 425px) {
+    .hero {
+        height: 900px;
+        background-size: cover;
+        background-position: top center;
+        .container {
+            min-width: 100%;
+            padding: 0;
+            .hero-header {
+              padding: 10px 0;
+              .logo-header {
+                width: 130px;
+              }
+      
+            }
+        }
+     
+        .hero-text {
+          margin: 180px auto 0 auto;
+          max-width: 425px;
+          width: 100%;
+          padding: 20px 0 0 20px;
+          background-color: rgb(255, 255, 255, 0.3);
+          border-radius: 15px;
+          position: relative;
+          z-index: 2;
+          .hero-title {
+            font-size: 1.4rem;
+            text-shadow: 10px 5px 5px rgba(255, 255, 255, 0.3);
+            
+          }
+          .hero-subtitle {
+            font-size: 1.2rem;
+          }
+          .hero-p {
+            font-size: .9rem;
+            max-width: 90%;
+          }
+        }
+        .img-perfil {
+          max-width: 425px;
+          width: 100%;
+          padding: 0;
+          margin: 0;
+          position: absolute;
+          top: 0;
+          .perfil {
+            position: relative;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70%;
+          }
+        }
+        
+    }
+}

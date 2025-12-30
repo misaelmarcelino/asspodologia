@@ -1,0 +1,198 @@
+.pain {
+    background-color:#D7B398;
+    background-size: auto;
+    height: 900px;
+    margin-top: -300px;
+    margin-bottom: 100px;
+    padding-top: 200px;
+    .pain-header {
+        padding: 0;
+        margin: 0 0 0 40%;
+        width: 55%;
+        .pain-title {
+            font-weight: 700;
+            text-align: end;
+            line-height: 1.7rem;
+        }
+    }
+    .pain-content {
+        width: 53.3% !important;
+        .pain-context {
+            margin-top: 30px;
+            background-color: rgba($color: #F39C12, $alpha: 14%);
+            padding: 25px;
+            font-size: 1.2rem;
+
+            p {
+                padding: 7px 0;
+            }
+        }
+    }
+    
+    .pain-footer {
+        font-size: 1.7rem;
+        font-weight: 700;
+        padding-top: 40px;
+    }
+
+}
+
+@media (max-width: 1199px) and (min-width: 1025px) {
+    .pain {
+        .container {
+            max-width: 1100px;
+            min-width: 960px;
+
+            .pain-header {
+                .pain-title {
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    text-align: end;
+                    line-height: 1.7rem;
+                }
+            }
+            .pain-feets {
+                margin-left: 100px;
+                margin-top: 30px;
+                max-width: 80%;
+
+            }
+            .pain-content {
+                .pain-context {
+                    font-size: 1.1rem;
+                }
+            }
+
+        } 
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    .pain {
+        min-height: 950px;
+        height: 100%;
+        margin-top: -250px;
+        margin-bottom: 100px;
+        padding-top: 150px;
+        .container {
+            max-width: 1000px;
+            min-width: 760px;
+
+            .pain-header {
+                padding: 0;
+                margin-left: 40%;
+                .pain-title {
+                    
+                    font-size: 1.4rem;
+                    font-weight: 700;
+                    text-align: right;
+                    line-height: 1.6rem;
+                }
+            }
+            .pain-feets {
+                margin-left: 0;
+                margin-top: 30px;
+                max-width: 90%;
+
+            }
+            .pain-content {
+                .pain-context {
+                    margin: 10px 0;
+                    font-size: 1.1rem;
+                }
+            }
+            .pain-footer {
+                font-size: 1.5rem;
+            }
+
+        } 
+    }
+}
+
+@media (max-width: 768px) and (min-width: 426px) {
+    .pain {
+        min-height: 1250px;
+        height: 100%;
+        margin-top: -200px;
+        margin-bottom: 100px;
+        padding-top: 150px;
+        .container {
+            max-width: 100%;
+            padding: 0 15px;
+
+            .pain-header {
+                margin-left: 40%;
+                width: 60%;
+                padding: 0;
+                .pain-title {
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    text-align: right;
+                    line-height: 1.5rem;
+                }
+            }
+            .pain-feets {
+                
+                margin-left: 0;
+                margin-top: 30px;
+                max-width: 100%;
+
+            }
+            .pain-content {
+                width: 90% !important;
+                margin: 0 auto;
+                .pain-context {
+                    margin: 10px 0;
+                    font-size: 1.2rem;
+                }
+            }
+            .pain-footer {
+                text-align: center;
+                font-size: 1.3rem;
+            }
+
+        } 
+    }
+}
+
+@media (max-width: 425px) {
+    .pain {
+        width: 100%;
+        height: 1300px;
+        margin-bottom: 100px;
+        padding: 180px 7px 0 7px;
+        
+        .container {
+            max-width:425px;
+            width: 100%;    
+            .pain-header {
+                min-width: 350px;
+                width: 100%;
+                margin: 0 auto;
+                width: 70%;
+                padding: 10px 0;
+                .pain-title {
+                    font-size: 1.3rem;
+                    font-weight: 700;
+                    text-align: right;
+                    line-height: 1.5rem;
+                }
+            }
+            .pain-feets {
+                width: 90%;
+            }
+            .pain-content {
+                width: 90% !important;
+                margin: 0 auto;
+                .pain-context {
+                    margin: 10px 0;
+                    font-size: 1rem;
+                }
+            }
+            .pain-footer {
+                text-align: center;
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
