@@ -5,7 +5,9 @@
     no-repeat
     top center;
     background-size: cover;  
-
+  .visually-hidden {
+    display: none;
+  }
   .hero-text {
     padding: 130px 0 0 100px;
 

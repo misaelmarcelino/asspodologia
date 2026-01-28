@@ -12,38 +12,61 @@ body {
 }
 
 .btn {
-  width: 100%;
+  width: 580px;
   background-color: #F1C40F;
   border-radius: 50px;
   border: 1px solid #2C3E50;
   position: relative;
   z-index: 200;
   cursor: pointer;
-}
-
-.btn-cta-primary {
-  padding: 1.5rem 1.1rem;
-  margin: 15px 0 15px 60px;
-  width: 530px;
-  display: flex;
-}
-.btn-cta-primary .cta-link {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  text-decoration: none;
-  color: #2C3E50;
-  font-size: 1.2rem;
-  font-weight: 600;
 }
-.btn-cta-primary .cta-link .btn-cta-text {
-  width: 440px;
+
+.btn-cta-primary {
+  padding: 1.2rem 1rem;
+  margin: 15px 0 15px 60px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2C3E50;
 }
 .btn-cta-primary:hover {
-  width: 550px;
+  width: 590px;
   opacity: 0.9;
   background-color: #F1C40F;
+}
+
+.btn-cta-secondary {
+  width: 350px;
+  margin: 15px auto;
+  padding: 1rem;
+  font-weight: 600;
+  color: #2C3E50;
+  font-size: 1.2rem;
+}
+.btn-cta-secondary .btn-cta-icon {
+  width: 37px;
+}
+.btn-cta-secondary:hover {
+  width: 360px;
+  opacity: 0.9;
+  background-color: #F1C40F;
+}
+
+.btn-faq {
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  border: 1px solid #2C3E50;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  background-color: #F1C40F;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2C3E50;
 }
 
 @media (max-width: 1199px) and (min-width: 992px) {
@@ -92,32 +115,7 @@ body {
     width: 100%;
   }
 }
-.btn-cta-secondary {
-  width: 450px;
-  margin: 15px auto;
-  padding: 1rem;
-  display: flex;
-}
-.btn-cta-secondary .cta-link {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  text-decoration: none;
-  color: #2C3E50;
-  font-size: 1.2rem;
-  font-weight: 700;
-}
-.btn-cta-secondary .btn-cta-icon {
-  width: 37px;
-}
-.btn-cta-secondary:hover {
-  width: 480px;
-  opacity: 0.9;
-  background-color: #F1C40F;
-}
-
-@media (max-width: 425px) {
+@media (max-width: 320px) {
   .btn-cta-secondary {
     width: 100%;
     margin: 15px auto;
@@ -136,25 +134,13 @@ body {
     width: 100%;
   }
 }
-.btn-faq {
-  width: 100%;
-  height: 60px;
-  border-radius: 10px;
-  border: 1px solid #2C3E50;
-  display: flex;
-  align-items: center;
-  padding-left: 20px;
-  background-color: #F1C40F;
-  text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #2C3E50;
-}
-
 .hero {
   height: 100vh;
   background: url("../img/bg/bg-hero.png") no-repeat top center;
   background-size: cover;
+}
+.hero .visually-hidden {
+  display: none;
 }
 .hero .hero-text {
   padding: 130px 0 0 100px;

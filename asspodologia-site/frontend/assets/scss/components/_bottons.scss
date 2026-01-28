@@ -1,40 +1,61 @@
 @use "../variables" as v;
 
 .btn {
-    width: 100%;
+    width: 580px;
     background-color: v.$secondary-color;
     border-radius: 50px;
     border: 1px solid v.$primary-color; 
     position: relative;
     z-index: 200;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 .btn-cta-primary {
-    padding: 1.5rem 1.1rem ;
+    padding: 1.2rem 1rem ;
     margin: 15px 0 15px 60px;
-    width: 530px;
-    display: flex;
-
-    .cta-link {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        text-decoration: none;
-        color: v.$primary-color;
-        font-size: 1.2rem;
-        font-weight: 600;
-
-        .btn-cta-text {
-            width: 440px;
-        }
-    }
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: v.$primary-color;
     &:hover {
-        width: 550px;
+        width: 590px;
         opacity: 0.9;
         background-color: v.$secondary-color;
     }
         
+}
+.btn-cta-secondary {
+    width: 350px;
+    margin: 15px auto;
+    padding: 1rem;    
+    font-weight: 600;
+    color: v.$primary-color;
+    font-size: 1.2rem;
+    .btn-cta-icon {
+        width: 37px;
+    }
+
+    &:hover {
+        width: 360px;
+        opacity: 0.9;
+        background-color: v.$secondary-color;
+    }
+}
+
+.btn-faq {
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid v.$primary-color;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    background-color: v.$secondary-color;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: v.$primary-color;
 }
 
 @media (max-width: 1199px) and (min-width: 992px) {
@@ -94,34 +115,7 @@
     }
 }
 
-.btn-cta-secondary {
-    width: 450px;
-    margin: 15px auto;
-    padding: 1rem;
-    display: flex;
-    
-    .cta-link {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        text-decoration: none;
-        color: v.$primary-color;
-        font-size: 1.2rem;
-        font-weight: 700;
-    }
-    .btn-cta-icon {
-        width: 37px;
-    }
-
-    &:hover {
-        width: 480px;
-        opacity: 0.9;
-        background-color: v.$secondary-color;
-    }
-}
-
-@media (max-width: 425px) {
+@media (max-width: 320px) {
     .btn-cta-secondary {
         width: 100%;
         margin: 15px auto;
@@ -143,17 +137,3 @@
     }
 }
 
-.btn-faq {
-    width: 100%;
-    height: 60px;
-    border-radius: 10px;
-    border: 1px solid v.$primary-color;
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
-    background-color: v.$secondary-color;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: v.$primary-color;
-}
