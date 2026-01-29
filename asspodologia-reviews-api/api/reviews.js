@@ -5,6 +5,17 @@ let cache = {
 };
 
 export default async function handler(req, res) {
+
+  // 🔓 CORS
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "GET,OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+
+  // Preflight (OPTIONS)
+  if (req.method === "OPTIONS") {
+    return res.status(200).end();
+  }
+  
   try {
     if (cache.data && Date.now() - cache.timestamp < CACHE_TTL) {
       return res.status(200).json(cache.data);
